@@ -1,4 +1,4 @@
-// Fairlady Crash character data (generated from プロフィールまとめ.docx)
+// Fairlady Clash character data (generated from プロフィールまとめ.docx)
 window.FC_CHARACTERS = [
  {
   "id": "hibiki",

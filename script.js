@@ -137,7 +137,7 @@ function showChara(index) {
   addSection("性格・特徴", chara.personality);
   addSection("プロフィール", String(chara.profile || "").split("\n").map(v => v.trim()).filter(Boolean)[0] || "");
   addSection("口癖", chara.kuse);
-  const shareUrl = "https://studiopretender.github.io/fairlady-crash/chara/" + chara.id + ".html";
+  const shareUrl = "https://studiopretender.github.io/fairlady-clash/chara/" + chara.id + ".html";
   const shareText = "【" + chara.teamName + "】" + chara.name + " " + (chara.catch || "") + " #フェアレディクラッシュ";
   charaFloat.querySelector(".chara-share-x").href =
     "https://twitter.com/intent/tweet?text=" + encodeURIComponent(shareText) + "&url=" + encodeURIComponent(shareUrl);
