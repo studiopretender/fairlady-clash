@@ -3037,6 +3037,25 @@ a.chara-card {
   margin-top: 6px;
 }
 
+.guidebook-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(18px, 4vw, 42px);
+}
+
+.guidebook-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.guidebook-links {
+  align-items: center;
+  margin-top: 18px;
+}
+
 @media (max-width: 680px) {
   .reading-links {
     display: grid;
@@ -3049,6 +3068,19 @@ a.chara-card {
 
   .home-heroes {
     grid-template-columns: 1fr;
+  }
+
+  .guidebook-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .guidebook-cover {
+    max-width: 230px;
+    justify-self: center;
+  }
+
+  .guidebook-links .wire-button {
+    width: 100%;
   }
 }
 
